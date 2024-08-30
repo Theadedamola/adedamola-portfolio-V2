@@ -19,7 +19,7 @@ const Work = () => {
             Design.
           </h1>
         </Link>
-        <Link onClick={() => handleSelected('frontend')} to="/work">
+        <Link onClick={() => handleSelected('frontend')} to="/work/frontend">
           <h1
             className={`text-4xl lg:text-5xl font-reyka text-white ${
               selected === 'frontend' ? 'border-b-2 border-b-white' : ''

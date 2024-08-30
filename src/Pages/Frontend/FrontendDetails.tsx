@@ -1,15 +1,17 @@
-import { CaseStudyTypes } from '@/Types/caseTypes'
-
-const DesignDetails = ({
+import Button from '@/Components/Button'
+import { FrontendTypes } from '@/Types/frontendTypes'
+const FrontendDetails = ({
   thumbnail,
   name,
   subtext,
+  website,
+  github,
   process,
   solution,
-}: CaseStudyTypes) => {
+}: FrontendTypes) => {
   return (
     <div>
-      <div className="relative w-full h-screen px-6 md:px-16 flex flex-col items-center pt-[130px]">
+      <div className="relative w-full h-screen px-6 md:px-16 flex flex-col pt-[130px]">
         <div className="z-10 absolute left-0 top-0 w-full h-screen bg-black bg-opacity-50 backdrop-blur-xl"></div>
         <div className="">
           <img
@@ -23,6 +25,16 @@ const DesignDetails = ({
             {name}
           </h1>
           <p className="text-white sm:text-xl">{subtext}</p>
+          <div className='flex gap-4'>
+            <Button onClick={() => window.open(website, '_blank')}>
+              View Website
+            </Button>
+            {github && (
+              <Button variant="secondary" onClick={() => window.open(github, '_blank')}>
+                View Github
+              </Button>
+            )}
+          </div>
         </div>
       </div>
       <div className="p-6 md:p-16 flex flex-col gap-16">
@@ -55,4 +67,4 @@ const DesignDetails = ({
     </div>
   )
 }
-export default DesignDetails
+export default FrontendDetails

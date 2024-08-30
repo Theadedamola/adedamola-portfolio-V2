@@ -15,6 +15,7 @@ export default {
       },
       backgroundImage: {
         'hero-bg': "url('/src/assets/gradient-bg.jpeg')",
+        'hero-bg-mobile': "url('/src/assets/bgMobile.png')",
       },
       fontFamily: {
         reyka: ['Reyka FREE', 'sans-serif'],

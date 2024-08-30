@@ -18,7 +18,7 @@ const LandingPage = () => {
       },
     }
   return (
-    <div className="relative w-full h-screen bg-hero-bg bg-cover bg-no-repeat px-6 md:px-16 flex flex-col items-center pt-[130px]">
+    <div className="relative w-full h-screen bg-hero-bg-mobile lg:bg-hero-bg bg-cover bg-no-repeat px-6 md:px-16 flex flex-col items-center pt-[130px]">
       <div className="z-10 absolute left-0 top-0 w-full h-screen bg-black bg-opacity-20 backdrop-blur-xl"></div>
       <div className="z-40 relative flex justify-between w-full">
         <Link to="/work">
