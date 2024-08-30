@@ -9,8 +9,12 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#E14842',
+        secondary: '#1e1e1e',
+      },
       backgroundImage: {
-        'hero-bg': "url('/src/Components/assets/gradient-bg.jpeg')",
+        'hero-bg': "url('/src/assets/gradient-bg.jpeg')",
       },
       fontFamily: {
         reyka: ['Reyka FREE', 'sans-serif'],
