@@ -1,4 +1,5 @@
 import { CaseStudyTypes } from '@/Types/caseTypes'
+import { motion } from 'framer-motion'
 
 const DesignDetails = ({
   thumbnail,
@@ -19,10 +20,30 @@ const DesignDetails = ({
           />
         </div>
         <div className="z-40 my-24 sm:my-auto flex flex-col space-y-6">
-          <h1 className="text-white text-[42px] sm:text-7xl font-reyka">
+          <motion.h1
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 1,
+              duration: 0.5,
+              ease: 'easeInOut',
+            }}
+            className="text-white text-[42px] sm:text-7xl font-reyka"
+          >
             {name}
-          </h1>
-          <p className="text-white sm:text-xl">{subtext}</p>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 1.5,
+              duration: 0.5,
+              ease: 'easeInOut',
+            }}
+            className="text-white sm:text-xl"
+          >
+            {subtext}
+          </motion.p>
         </div>
       </div>
       <div className="p-6 md:p-16 flex flex-col gap-16">
@@ -42,7 +63,15 @@ const DesignDetails = ({
               <h1 className="uppercase font-bold">{item.heading}</h1>
               <p className="text-[#4F4F4F]">{item.content}</p>
               {item.image && (
-                <img
+                <motion.img
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true, amount: 0.1 }}
+                  transition={{ duration: 0.5 }}
+                  variants={{
+                    hidden: { opacity: 0, scale: 0.8 },
+                    visible: { opacity: 1, scale: 1 },
+                  }}
                   className="w-full h-full object-contain"
                   src={item.image}
                   alt={item.heading}

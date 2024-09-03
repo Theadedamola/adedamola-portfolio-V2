@@ -9,22 +9,22 @@ const Footer = () => {
         Connect with me
       </h1>
       <hr className="w-full border border-solid border-[#E14842]" />
-      <div className="flex flex-col lg:flex-row items-center space-y-6 lg:space-x-40">
-        <div className="flex flex-col space-y-6 items-center">
+      <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-40">
+        <div className="flex flex-col gap-6 items-center">
           <p className="text-white">Send me a mail</p>
           <Link to={'mailto:adedamolajose@gmail.com'}>
-            <p className="text-[#E14842] text-3xl font-reyka">
+            <p className="text-[#E14842] text-3xl font-reyka hover:text-2xl transition-all duration-300">
               adedamolajose@gmail.com
             </p>
           </Link>
         </div>
-        <div className="flex flex-col space-y-6 items-center">
+        <div className="flex flex-col gap-6 items-center">
           <p className="text-white">Hit me up on socials</p>
-          <ul className="flex space-x-6 text-[#E14842] font-reyka text-3xl">
-            <li>
+          <ul className="flex gap-6 text-[#E14842] font-reyka text-3xl">
+            <li className="hover:text-2xl transition-all duration-300">
               <Link to={'https://www.behance.net/damolaalausa'}>be</Link>
             </li>
-            <li>
+            <li className="hover:text-2xl transition-all duration-300">
               <Link
                 to={
                   'https://github.com/Theadedamola?tab=overview&from=2024-07-01&to=2024-07-18'
@@ -33,10 +33,10 @@ const Footer = () => {
                 gh
               </Link>
             </li>
-            <li>
+            <li className="hover:text-2xl transition-all duration-300">
               <Link to={'https://x.com/Theadedamola_'}>x(tw)</Link>
             </li>
-            <li>
+            <li className="hover:text-2xl transition-all duration-300">
               <Link
                 to={
                   'https://www.linkedin.com/in/adedamola-alausa/?profileId=ACoAADo6sI0B8r3x19-qYVm_jcnJ86tqpDSX3Cg'

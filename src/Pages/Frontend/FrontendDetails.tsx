@@ -1,5 +1,6 @@
 import Button from '@/Components/Button'
 import { FrontendTypes } from '@/Types/frontendTypes'
+import { motion } from 'framer-motion'
 const FrontendDetails = ({
   thumbnail,
   name,
@@ -21,11 +22,36 @@ const FrontendDetails = ({
           />
         </div>
         <div className="z-40 my-24 sm:my-auto flex flex-col space-y-6">
-          <h1 className="text-white text-[42px] sm:text-7xl font-reyka">
+          <motion.h1
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 1,
+              duration: 0.5,
+              ease: 'easeInOut',
+            }}
+            className="text-white text-[42px] sm:text-7xl font-reyka"
+          >
             {name}
-          </h1>
-          <p className="text-white sm:text-xl">{subtext}</p>
-          <div className='flex gap-4'>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 1.5,
+              duration: 0.5,
+              ease: 'easeInOut',
+            }}
+            className="text-white sm:text-xl">{subtext}</motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              delay: 2,
+              duration: 0.5,
+              ease: 'easeInOut',
+            }}
+            className='flex gap-4'>
             <Button onClick={() => window.open(website, '_blank')}>
               View Website
             </Button>
@@ -34,7 +60,7 @@ const FrontendDetails = ({
                 View Github
               </Button>
             )}
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="p-6 md:p-16 flex flex-col gap-16">

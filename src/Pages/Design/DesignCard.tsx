@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { CardTypes } from '@/Types/caseTypes'
 import arrowRight from '@/assets/vuesax/linear/arrow-right.svg'
+import { motion } from 'framer-motion'
 
 const DesignCard = ({
   thumbnail,
@@ -9,7 +10,7 @@ const DesignCard = ({
   onPreviousProject,
 }: CardTypes) => {
   return (
-    <div className="relative w-full h-screen px-6 md:px-16 flex flex-col items-center pt-[160px]">
+    <div className="relative w-full h-screen px-6 md:px-16 flex flex-col items-center pt-[160px] md:pt-[240px] lg:pt-[160px]">
       <div className="z-10 absolute left-0 top-0 w-full h-screen bg-black bg-opacity-20 backdrop-blur-xl"></div>
       <div className="">
         <img
@@ -19,13 +20,29 @@ const DesignCard = ({
         />
       </div>
       <Link to={`/work/design/${name}`}>
-        <img
+        <motion.img
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            delay: 1,
+            duration: 0.5,
+            ease: 'easeInOut',
+          }}
           className="z-40 relative mt-14 lg:mt-8 w-[320px] h-[265px] md:w-[350px] md:h-[285px] rounded-3xl"
           src={thumbnail}
           alt="project-thumbnail"
         />
       </Link>
-      <div className="z-40 relative mt-6 px-7 py-2 md:px-10 md:py-6 flex flex-col items-center space-y-6 bg-black bg-opacity-25 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          delay: 1,
+          duration: 0.5,
+          ease: 'easeInOut',
+        }}
+        className="z-40 relative mt-6 px-7 py-2 md:px-10 md:py-6 flex flex-col items-center space-y-6 bg-black bg-opacity-25 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]"
+      >
         <Link to={`/work/design/${name}`}>
           <h1
             className={`text-white text-xl md:text-2xl w-[300px] md:w-[400px] h-[50px] text-center delay-300 `}
@@ -47,7 +64,7 @@ const DesignCard = ({
             <img src={arrowRight} alt="" />
           </button>
         </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

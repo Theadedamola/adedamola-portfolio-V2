@@ -28,11 +28,11 @@ const LandingPage = () => {
           <h1 className="text-4xl lg:text-5xl font-reyka text-white">About.</h1>
         </Link>
       </div>
-      <div className="z-40 mt-16 flex flex-col items-center justify-center w-full">
+      <div className="z-40 mt-8 xs:mt-16 md:mt-32 lg:mt-16 flex flex-col items-center justify-center w-full">
         <div className="flex flex-col items-center justify-center space-y-4">
           <motion.h1
             ref={ref}
-            className="text-4xl lg:text-5xl font-reyka text-white"
+            className="text-4xl lg:text-5xl font-reyka text-white text-center"
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
             variants={{
@@ -71,15 +71,31 @@ const LandingPage = () => {
               </motion.span>
             ))}
           </motion.p>
-          <p className="text-white lg:w-full text-center">
+          <motion.p
+            ref={ref}
+            className="text-white text-center sm:w-[420px] text-wrap"
+            initial="hidden"
+            animate={isInView ? 'visible' : 'hidden'}
+            variants={wordVariants}
+          >
             "The purpose of design is to make things better, not just look
             better." - Vitaly Friedman
-          </p>
+          </motion.p>
           <Link to="/work">
             <Button variant="secondary">View Work</Button>
           </Link>
         </div>
-        <div className="w-full lg:w-1/2 mt-14 py-10 bg-black bg-opacity-25 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.1 }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className="w-full lg:w-1/2 mt-7 sm:mt-14 py-10 bg-black bg-opacity-25 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]"
+        >
           <Marquee gradient={false} speed={50}>
             {skillIcon.map((skill) => (
               <img
@@ -90,7 +106,7 @@ const LandingPage = () => {
               />
             ))}
           </Marquee>
-        </div>
+        </motion.div>
       </div>
     </div>
   )
