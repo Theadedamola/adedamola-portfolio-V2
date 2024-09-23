@@ -23,3 +23,8 @@ export interface CardTypes {
   onNextProject: () => void
   onPreviousProject: () => void
 }
+
+export interface PreviewCardTypes {
+  image: string
+  name: string
+}

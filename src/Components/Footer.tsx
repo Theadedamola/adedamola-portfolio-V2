@@ -4,7 +4,7 @@ const Footer = () => {
   const date = new Date().getFullYear()
 
   return (
-    <div className="h-fit w-full p-16 flex flex-col space-y-10 items-center bg-[#171717]">
+    <div className="h-fit w-full p-16 flex flex-col space-y-10 items-center bg-[#090909]">
       <h1 className=" text-3xl md:text-5xl font-reyka text-center text-[#E14842]">
         Connect with me
       </h1>
