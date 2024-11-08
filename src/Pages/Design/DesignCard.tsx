@@ -10,7 +10,7 @@ const DesignCard = ({
   onPreviousProject,
 }: CardTypes) => {
   return (
-    <div className="relative w-full h-screen px-6 md:px-16 flex flex-col items-center pt-[160px] md:pt-[240px] lg:pt-[160px]">
+    <div className="relative w-full h-screen bg-hero-bg px-6 md:px-16 flex flex-col items-center pt-[160px] md:pt-[240px] lg:pt-[160px]">
       <div className="z-10 absolute left-0 top-0 w-full h-screen bg-black bg-opacity-20 backdrop-blur-xl"></div>
       <div className="">
         <img
@@ -41,7 +41,7 @@ const DesignCard = ({
           duration: 0.5,
           ease: 'easeInOut',
         }}
-        className="z-40 relative mt-6 px-7 py-2 md:px-10 md:py-6 flex flex-col items-center space-y-6 bg-black bg-opacity-25 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]"
+        className="z-40 relative mt-6 px-7 py-2 md:px-10 md:py-6 flex flex-col items-center space-y-6 bg-black bg-opacity-70 backdrop-blur-sm rounded-3xl border border-[#65656531]"
       >
         <Link to={`/work/design/${name}`}>
           <h1

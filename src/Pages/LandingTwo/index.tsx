@@ -2,24 +2,18 @@ import ProfileCard from './ProfileCard'
 import WorkSlide from './WorkSlide'
 import SkillSlide from './SkillSlide'
 import VarietySlide from './VarietySlide'
+import Testimonial from './Testimonial'
+import Connect from './Connect'
 
 const LandingIndex = () => {
   return (
-    <div>
-      <div className="z-40 relative grid grid-cols-6 gap-4 justify-between w-full">
-        <div className="col-span-2">
-            <ProfileCard />
-        </div>
-        <div className="col-span-4">
-            <WorkSlide />
-        </div>
-        <div className="col-span-4">
-            <SkillSlide />
-        </div>
-        <div className="col-span-2">
-            <VarietySlide />
-        </div>
-      </div>
+    <div className="px-6 md:px-14 lg:px-40 flex flex-col gap-24 w-full max-w-[1440px] py-[180px]">
+      <ProfileCard />
+      <WorkSlide />
+      <SkillSlide />
+      <VarietySlide />
+      <Testimonial />
+      <Connect />
     </div>
   )
 }

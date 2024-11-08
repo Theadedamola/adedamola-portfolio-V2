@@ -10,7 +10,7 @@ const DesignDetails = ({
 }: CaseStudyTypes) => {
   return (
     <div>
-      <div className="relative w-full h-screen px-6 md:px-16 flex flex-col items-center pt-[130px]">
+      <div className="relative w-full h-screen bg-hero-bg px-6 md:px-16 flex flex-col items-center pt-[130px]">
         <div className="z-10 absolute left-0 top-0 w-full h-screen bg-black bg-opacity-50 backdrop-blur-xl"></div>
         <div className="">
           <img
@@ -40,7 +40,7 @@ const DesignDetails = ({
               duration: 0.5,
               ease: 'easeInOut',
             }}
-            className="text-white sm:text-xl"
+            className="text-[#fff] sm:text-xl"
           >
             {subtext}
           </motion.p>
@@ -52,7 +52,7 @@ const DesignDetails = ({
           {process.map((item, index) => (
             <div key={index} className="flex flex-col gap-4">
               <h1 className="uppercase font-bold">{item.heading}</h1>
-              <p className="text-[#4F4F4F]">{item.content}</p>
+              <p className="text-[#6a6a6a]">{item.content}</p>
             </div>
           ))}
         </div>
@@ -61,7 +61,7 @@ const DesignDetails = ({
           {solution.map((item, index) => (
             <div key={index} className="flex flex-col gap-4">
               <h1 className="uppercase font-bold">{item.heading}</h1>
-              <p className="text-[#4F4F4F]">{item.content}</p>
+              <p className="text-[#6a6a6a]">{item.content}</p>
               {item.image && (
                 <motion.img
                   initial="hidden"

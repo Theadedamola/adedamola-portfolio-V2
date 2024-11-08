@@ -1,13 +1,16 @@
 import { Link } from 'react-router-dom'
+import nameImg from '@/assets/name.png'
+
 
 const Footer = () => {
   const date = new Date().getFullYear()
 
   return (
     <div className="h-fit w-full p-16 flex flex-col space-y-10 items-center bg-[#090909]">
-      <h1 className=" text-3xl md:text-5xl font-reyka text-center text-[#E14842]">
+      {/* <h1 className=" text-3xl md:text-5xl font-reyka text-center text-[#E14842]">
         Connect with me
-      </h1>
+      </h1> */}
+      <img src={nameImg} alt="" />
       <hr className="w-full border border-solid border-[#E14842]" />
       <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-40">
         <div className="flex flex-col gap-6 items-center">
