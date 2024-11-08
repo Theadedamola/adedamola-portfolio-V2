@@ -32,11 +32,35 @@ export default {
           '0%': { transform: 'translateX(100%)', opacity: '0' },
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
+        wave: {
+          '0%': {
+            transform: 'scale(0)',
+            filter: 'hue-rotate(90deg) blur(100px)',
+          },
+          '25%': {
+            transform: 'scale(0)',
+            filter: 'hue-rotate(120deg) blur(50px)',
+          },
+          '50%': {
+            transform: 'scale(1)',
+            filter: 'hue-rotate(180deg) blur(25px)',
+          },
+          '75%': {
+            transform: 'scale(0)',
+            filter: 'hue-rotate(360deg) blur(2px)',
+          },
+          '100%': {
+            transform: 'scale(0)',
+            filter: 'hue-rotate(0deg) blur(0)',
+          },
+        },
       },
       animation: {
         'slide-in-left': 'slide-in-left 0.5s forwards',
         'slide-in-right': 'slide-in-right 0.5s forwards',
+        wave: 'wave 1.5s linear infinite',
       },
+      
     },
   },
   plugins: [],

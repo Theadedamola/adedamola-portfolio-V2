@@ -19,9 +19,9 @@ const Connect = () => {
         <div>
           <img src={workWithImg} alt="work with me" className="w-80" />
         </div>
-        <div className="flex flex-col gap-4">
-          <h1 className=''>Ready to kickstart your project</h1>
-          <p className="text-[#8a8a8a] max-w-[32rem]">
+        <div className="flex flex-col gap-4 items-center lg:items-start">
+          <h1 className="">Ready to kickstart your project</h1>
+          <p className="text-[#8a8a8a] max-w-[32rem] text-center lg:text-start">
             Available to work on your ideas, imaginations and business, you
             bring the idea, I'll bring my wealth of experiences
           </p>

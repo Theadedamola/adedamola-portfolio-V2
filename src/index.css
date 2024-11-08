@@ -27,7 +27,7 @@ body,
   align-items: center;
   justify-content: center;
   font-family: "Geist", sans-serif;
-  @apply text-gray-300 bg-[#090909];
+  @apply text-gray-200 bg-[#090909];
 }
 
 body {

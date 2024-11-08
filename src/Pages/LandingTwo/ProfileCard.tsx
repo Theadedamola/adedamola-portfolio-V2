@@ -2,6 +2,7 @@ import Button from '@/Components/Button'
 import { motion } from 'framer-motion'
 import me from '@/assets/me.jpeg'
 import me1 from '@/assets/me1.jpg'
+import { Link } from 'react-router-dom'
 
 const ProfileCard = () => {
   return (
@@ -45,9 +46,11 @@ const ProfileCard = () => {
           ensure the successful and timely delivery of projects within budget
           constraints.
         </p>
-        <Button variant="secondary" className="w-fit mt-4 text-[#c7c7c7]">
-          About me.
-        </Button>
+        <Link to="/about">
+          <Button variant="secondary" className="w-fit mt-4 text-[#c7c7c7]">
+            About me.
+          </Button>
+        </Link>
       </div>
     </motion.div>
   )
