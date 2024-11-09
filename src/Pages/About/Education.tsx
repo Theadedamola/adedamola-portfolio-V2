@@ -12,7 +12,7 @@ const Education = () => {
           engineering. I hold a Google UX design certification and completed a
           product design internship with Zuri, earning a certificate.
         </p>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 p-6 w-fit text-sm text-[#8a8a8a] bg-[#101010] border-[0.5px] border-[#2b2b2b] rounded-2xl">
           <p>Download my resumé here</p>
           <img src={docImg} alt="" className="w-40" />
           <Button variant="secondary" className="w-fit">

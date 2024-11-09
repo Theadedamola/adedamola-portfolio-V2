@@ -45,6 +45,13 @@ const toggleMenu = () => {
               >
                 <Link to="/about">about me.</Link>
               </li>
+              <li
+                className={`hover:text-primary transition-all duration-300 ${
+                  selectedPath === '/work' && 'text-primary font-semibold'
+                }`}
+              >
+                <Link to="/work">work.</Link>
+              </li>
               <Button>Contact me</Button>
             </ul>
           )}
@@ -72,6 +79,14 @@ const toggleMenu = () => {
             onClick={() => setIsOpen(false)}
           >
             <Link to="/about">about me.</Link>
+          </li>
+          <li
+            className={`hover:text-primary text-3xl transition-all duration-300 ${
+              selectedPath === '/work' && 'text-primary font-semibold'
+            }`}
+            onClick={() => setIsOpen(false)}
+          >
+            <Link to="/work">work.</Link>
           </li>
           <Button>Contact me</Button>
         </ul>

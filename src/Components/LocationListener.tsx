@@ -7,7 +7,7 @@ const LocationListener: React.FC = () => {
   const { setSelectedPath } = useSelectedPath()
 
   useEffect(() => {
-    const pathsToWatch = ['/', '/about']
+    const pathsToWatch = ['/', '/about', '/work']
     if (pathsToWatch.includes(location.pathname)) {
       setSelectedPath(location.pathname)
     }

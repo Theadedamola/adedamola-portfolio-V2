@@ -1,8 +1,13 @@
+import { useState } from 'react'
 import AudioPlayer from './components/AudioPlayer'
 import { shirtData } from './components/shirtData'
 import Marquee from 'react-fast-marquee'
 
 const Enjoy = () => {
+  const [showTranscript, setShowTranscript] = useState(false)
+  const toggleMenu = () => {
+    setShowTranscript((prev) => !prev)
+  }
   return (
     <div className="w-full flex items-center justify-center max-w-[1440px]">
       <div className="flex flex-col gap-10">
@@ -20,6 +25,32 @@ const Enjoy = () => {
           </p>
           <div className="flex flex-col gap-4 mt-6 p-6 bg-[#101010] bg-opacity-50 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
             <AudioPlayer />
+            <div
+              onClick={toggleMenu}
+              className="p-2 w-fit text-sm text-[#8a8a8a] bg-[#1e1e1e] border-[0.5px] border-[#2b2b2b] rounded-full cursor-pointer hover:border-[#484848] hover:text-gray-200"
+            >
+              <p>Read Transcript</p>
+            </div>
+            {showTranscript && (
+              <div className="flex flex-col gap-4">
+                <p>
+                  I'm a football fanatic and I live and breathe the game. I
+                  create engaging football content on TikTok and I'm also a
+                  fashion designer specializing in football jerseys. My ultimate
+                  goal is to make a significant impact in the world of sports
+                  fashion and the game at large. I'm confident that with my
+                  passion and dedication, I'll achieve this goal soon.
+                </p>
+                <p className="text-[#8a8a8a]">
+                  I'm a football fanatic and I live and breathe the game. I
+                  create engaging football content on TikTok and I'm also a
+                  fashion designer specializing in football jerseys. My ultimate
+                  goal is to make a significant impact in the world of sports
+                  fashion and the game at large. I'm confident that with my
+                  passion and dedication, I'll achieve this goal soon.
+                </p>
+              </div>
+            )}
           </div>
         </div>
         <div className="flex flex-col gap-2">
@@ -35,10 +66,10 @@ const Enjoy = () => {
           <div className="flex flex-col gap-4 mt-6 p-6 bg-[#101010] bg-opacity-50 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
             <p>Check out my my page</p>
             <div className="flex gap-4">
-              <div className="p-2 w-fit text-sm text-[#8a8a8a] bg-[#1e1e1e] border-[0.5px] border-[#2b2b2b] rounded-full">
+              <div className="p-2 w-fit text-sm text-[#8a8a8a] bg-[#1e1e1e] border-[0.5px] border-[#2b2b2b] rounded-full cursor-pointer hover:border-[#484848] hover:text-gray-200">
                 <p>TikTok</p>
               </div>
-              <div className="p-2 w-fit text-sm text-[#8a8a8a] bg-[#1e1e1e] border-[0.5px] border-[#2b2b2b] rounded-full">
+              <div className="p-2 w-fit text-sm text-[#8a8a8a] bg-[#1e1e1e] border-[0.5px] border-[#2b2b2b] rounded-full cursor-pointer hover:border-[#484848] hover:text-gray-200">
                 <p>Instagram</p>
               </div>
             </div>
