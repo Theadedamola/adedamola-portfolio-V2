@@ -1,7 +1,7 @@
 import Connect from '../LandingTwo/Connect'
 import Education from './Education'
 import Enjoy from './Enjoy'
-import Me from './Me'
+import Me from './AboutMe'
 
 const AboutMe = () => {
   return (
