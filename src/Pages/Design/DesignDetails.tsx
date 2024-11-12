@@ -51,8 +51,10 @@ const DesignDetails = ({
           <h1 className="text-2xl sm:text-6xl font-reyka my-3">Process</h1>
           {process.map((item, index) => (
             <div key={index} className="flex flex-col gap-4">
-              <h1 className="uppercase font-bold">{item.heading}</h1>
-              <p className="text-[#6a6a6a]">{item.content}</p>
+              <h1 className="uppercase font-medium text-xl">{item.heading}</h1>
+              <p className="text-[#757474]" style={{ whiteSpace: 'pre-line' }}>
+                {item.content}
+              </p>
             </div>
           ))}
         </div>
@@ -60,14 +62,14 @@ const DesignDetails = ({
           <h1 className="text-2xl sm:text-6xl font-reyka my-3">Solution</h1>
           {solution.map((item, index) => (
             <div key={index} className="flex flex-col gap-4">
-              <h1 className="uppercase font-bold">{item.heading}</h1>
-              <p className="text-[#6a6a6a]">{item.content}</p>
+              <h1 className="uppercase font-medium text-xl">{item.heading}</h1>
+              <p className="text-[#757474]">{item.content}</p>
               {item.image && (
                 <motion.img
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true, amount: 0.1 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.2 }}
                   variants={{
                     hidden: { opacity: 0, scale: 0.8 },
                     visible: { opacity: 1, scale: 1 },

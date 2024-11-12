@@ -1,14 +1,19 @@
 import { PreviewCardTypes } from '@/Types/caseTypes'
-import thumbnail1 from '@/assets/thumbnail1.png'
-import thumbnail2 from '@/assets/thumbnail2.png'
+import walletwiseThumbnail from '@/assets/walletwise/walletwise-thumbnail.png'
+import referaproThumbnail from '@/assets/referapro/referapro-thumbnail.png'
+import bigMerchantThumb from '@/assets/bigMerchant/bigMerchant-thumbnail.png'
 
 export const casePreview: PreviewCardTypes[] = [
   {
-    image: thumbnail1,
-    name: 'Shield: A design solution for a Traditional bank',
+    image: walletwiseThumbnail,
+    name: 'Walletwise: Fintech App',
   },
   {
-    image: thumbnail2,
-    name: 'Nodefi: A design solution for a Fintech',
+    image: referaproThumbnail,
+    name: 'ReferAPro',
+  },
+  {
+    image: bigMerchantThumb,
+    name: 'BigMerchant: Sales App',
   },
 ]

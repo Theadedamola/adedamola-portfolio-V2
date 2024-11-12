@@ -42,7 +42,10 @@ const FrontendDetails = ({
               duration: 0.5,
               ease: 'easeInOut',
             }}
-            className="text-white sm:text-xl">{subtext}</motion.p>
+            className="text-white sm:text-xl"
+          >
+            {subtext}
+          </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
@@ -51,12 +54,16 @@ const FrontendDetails = ({
               duration: 0.5,
               ease: 'easeInOut',
             }}
-            className='flex gap-4'>
+            className="flex gap-4"
+          >
             <Button onClick={() => window.open(website, '_blank')}>
               View Website
             </Button>
             {github && (
-              <Button variant="secondary" onClick={() => window.open(github, '_blank')}>
+              <Button
+                variant="secondary"
+                onClick={() => window.open(github, '_blank')}
+              >
                 View Github
               </Button>
             )}
@@ -68,8 +75,10 @@ const FrontendDetails = ({
           <h1 className="text-2xl sm:text-6xl font-reyka my-3">Process</h1>
           {process.map((item, index) => (
             <div key={index} className="flex flex-col gap-4">
-              <h1 className="uppercase font-bold">{item.heading}</h1>
-              <p className="text-[#4F4F4F]">{item.content}</p>
+              <h1 className="uppercase font-medium text-xl">{item.heading}</h1>
+              <p className="text-[#757474]" style={{ whiteSpace: 'pre-line' }}>
+                {item.content}
+              </p>
             </div>
           ))}
         </div>
@@ -77,8 +86,8 @@ const FrontendDetails = ({
           <h1 className="text-2xl sm:text-6xl font-reyka my-3">Solution</h1>
           {solution.map((item, index) => (
             <div key={index} className="flex flex-col gap-4">
-              <h1 className="uppercase font-bold">{item.heading}</h1>
-              <p className="text-[#4F4F4F]">{item.content}</p>
+              <h1 className="uppercase font-medium text-xl">{item.heading}</h1>
+              <p className="text-[#757474]">{item.content}</p>
               {item.image && (
                 <img
                   className="w-full h-full object-contain"

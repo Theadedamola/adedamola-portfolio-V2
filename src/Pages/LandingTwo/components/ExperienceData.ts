@@ -6,24 +6,24 @@ export interface ExperienceTypes {
 }
 export const ExperienceData: ExperienceTypes[] = [
   {
-    position: 'UX Engineer at Reycasa',
+    position: 'Design Engineer at Reycasa',
     duration: 'July 2024-present',
     summary:
-      'Worked on various projects, including designing and building the company`s website',
+      'Led the design direction of company projects, Design and Building the frontend components of clients project such as alongtheway.app, 3rpharmacare etc.',
     skill: ['React', 'UI/UX Design', 'Typescript'],
   },
   {
-    position: 'UX Engineer at Reycasa',
-    duration: 'July 2024-present',
+    position: 'UI/UX Designer at ReferAPro',
+    duration: 'Contract Nov 2023',
     summary:
-      'Worked on various projects, including designing and building the company`s website',
-    skill: ['React', 'UI/UX Design', 'Typescript'],
+      'Research, ideated and designed a web app SAAS product that focusses on helping business build connections, add their trusted partners and workers to their profile, share their experiences and professional info on their page, have a personal website to share with their prospective clients',
+    skill: ['UI/UX Design'],
   },
   {
-    position: 'UX Engineer at Reycasa',
-    duration: 'July 2024-present',
+    position: 'Product Designer at Freelance',
+    duration: '2020-July 2024',
     summary:
       'Worked on various projects, including designing and building the company`s website',
-    skill: ['React', 'UI/UX Design', 'Typescript'],
+    skill: ['Interaction design', 'UI/UX Design', 'User Research'],
   },
 ]
