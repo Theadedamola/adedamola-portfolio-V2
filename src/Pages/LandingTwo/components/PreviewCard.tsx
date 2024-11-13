@@ -7,7 +7,7 @@ const PreviewCard = ({ image }: Props) => {
       <img
         src={image}
         alt="project image"
-        className="w-full h-56 object-cover rounded-xl hover:scale-105 transition-all duration-300"
+        className="w-80 h-56 object-cover rounded-xl hover:scale-105 transition-all duration-300"
       />
     </div>
   )
