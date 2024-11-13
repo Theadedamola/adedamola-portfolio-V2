@@ -13,7 +13,7 @@ const ExperienceCard = ({
         <p className="text-[#8a8a8a]">{duration}</p>
       </div>
       <p className="text-[#8a8a8a]">{summary}</p>
-      <div className="flex gap-2">
+      <div className="flex gap-2 flex-wrap">
         {skill.map((s, index) => (
           <div
             key={index}

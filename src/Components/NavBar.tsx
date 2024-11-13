@@ -7,12 +7,14 @@ import { MenuIcon } from './Menu'
 import { useState } from 'react'
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false)
   const isAboveMediumScreens = useMediaQuery('(min-width: 800px)')
   const { selectedPath } = useSelectedPath()
-  const [isOpen, setIsOpen] = useState(false)
-const toggleMenu = () => {
-  setIsOpen((prev) => !prev)
-}
+
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev)
+  }
+
   return (
     <div className="fixed w-full z-50">
       <div className="fixed z-50 w-[90%] md:w-[85%] lg:w-[90%] h-20 my-6 mx-6 md:mx-16 flex justify-between items-center py-4 sm:py-10 2xl:w-[95%]">
@@ -52,13 +54,13 @@ const toggleMenu = () => {
               >
                 <Link to="/work">work.</Link>
               </li>
-              <Button>Contact me</Button>
+              <Link to={'mailto:adedamolajose@gmail.com'}>
+                <Button>Contact me</Button>
+              </Link>
             </ul>
           )}
           {!isAboveMediumScreens && (
-            <div onClick={toggleMenu} className="">
-              <MenuIcon />
-            </div>
+            <MenuIcon isOpen={isOpen} toggleMenu={toggleMenu} />
           )}
         </div>
       </div>
@@ -68,7 +70,7 @@ const toggleMenu = () => {
             className={`hover:text-primary text-3xl transition-all duration-300 ${
               selectedPath === '/' && 'text-primary font-semibold'
             }`}
-            onClick={() => setIsOpen(false)}
+            onClick={toggleMenu}
           >
             <Link to="/">home.</Link>
           </li>
@@ -76,7 +78,7 @@ const toggleMenu = () => {
             className={`hover:text-primary text-3xl transition-all duration-300 ${
               selectedPath === '/about' && 'text-primary font-semibold'
             }`}
-            onClick={() => setIsOpen(false)}
+            onClick={toggleMenu}
           >
             <Link to="/about">about me.</Link>
           </li>
@@ -84,11 +86,41 @@ const toggleMenu = () => {
             className={`hover:text-primary text-3xl transition-all duration-300 ${
               selectedPath === '/work' && 'text-primary font-semibold'
             }`}
-            onClick={() => setIsOpen(false)}
+            onClick={toggleMenu}
           >
             <Link to="/work">work.</Link>
           </li>
-          <Button>Contact me</Button>
+          <Link to={'mailto:adedamolajose@gmail.com'}>
+            <Button>Contact me</Button>
+          </Link>
+          <div>
+            <ul className="flex gap-6 text-[#E14842] font-reyka text-3xl">
+              <li className="hover:text-2xl transition-all duration-300">
+                <Link to={'https://www.behance.net/damolaalausa'}>be</Link>
+              </li>
+              <li className="hover:text-2xl transition-all duration-300">
+                <Link
+                  to={
+                    'https://github.com/Theadedamola?tab=overview&from=2024-07-01&to=2024-07-18'
+                  }
+                >
+                  gh
+                </Link>
+              </li>
+              <li className="hover:text-2xl transition-all duration-300">
+                <Link to={'https://x.com/Theadedamola_'}>x(tw)</Link>
+              </li>
+              <li className="hover:text-2xl transition-all duration-300">
+                <Link
+                  to={
+                    'https://www.linkedin.com/in/adedamola-alausa/?profileId=ACoAADo6sI0B8r3x19-qYVm_jcnJ86tqpDSX3Cg'
+                  }
+                >
+                  in
+                </Link>
+              </li>
+            </ul>
+          </div>
         </ul>
       )}
     </div>

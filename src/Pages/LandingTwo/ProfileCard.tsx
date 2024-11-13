@@ -1,6 +1,6 @@
 import Button from '@/Components/Button'
 import { motion } from 'framer-motion'
-import me from '@/assets/me.jpeg'
+import me from '@/assets/me.png'
 import me1 from '@/assets/me1.jpg'
 import { Link } from 'react-router-dom'
 
@@ -20,13 +20,13 @@ const ProfileCard = () => {
         <div className="relative flex gap-2">
           <img
             src={me}
-            alt=""
-            className="w-10 h-10 rounded-lg hover:absolute transition-all duration-300 hover:w-80 hover:h-80 hover:top-0 hover:left-0"
+            alt="adedamola's portrait"
+            className="w-10 h-10 rounded-lg"
           />
           <img
             src={me1}
-            alt=""
-            className="w-10 h-10 rounded-lg hover:absolute transition-all duration-300 hover:w-80 hover:h-80 hover:top-0 hover:left-0"
+            alt="adedamola's portrait"
+            className="w-10 h-10 rounded-lg"
           />
         </div>
         <h1 className="text-sm text-[#8a8a8a]">First of all</h1>

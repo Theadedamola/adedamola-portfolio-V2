@@ -2,7 +2,7 @@
 
 import type { Variants } from 'framer-motion'
 import { motion, useAnimation } from 'framer-motion'
-import { useState } from 'react'
+import { useEffect } from 'react'
 
 const lineVariants: Variants = {
   normal: {
@@ -22,14 +22,18 @@ const lineVariants: Variants = {
   }),
 }
 
-const MenuIcon = () => {
-  const controls = useAnimation()
-  const [isOpen, setIsOpen] = useState(false)
+interface MenuIconProps {
+  isOpen: boolean;
+  toggleMenu: () => void;
+}
 
-  const toggleMenu = () => {
-    setIsOpen((prev) => !prev)
-    controls.start(isOpen ? 'normal' : 'animate')
-  }
+const MenuIcon = ({ isOpen, toggleMenu }: MenuIconProps) => {
+  const controls = useAnimation();
+
+  // Use useEffect to start the animation when isOpen changes
+  useEffect(() => {
+    controls.start(isOpen ? 'animate' : 'normal');
+  }, [isOpen, controls]);
 
   return (
     <div
@@ -76,7 +80,7 @@ const MenuIcon = () => {
         />
       </svg>
     </div>
-  )
+  );
 }
 
-export { MenuIcon }
+export { MenuIcon };

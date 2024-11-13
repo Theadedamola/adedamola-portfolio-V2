@@ -1,4 +1,4 @@
-import meImg from '@/assets/me.jpeg'
+import meImg from '@/assets/me.png'
 import nameImg from '@/assets/name.png'
 import meImg1 from '@/assets/me1.jpg'
 

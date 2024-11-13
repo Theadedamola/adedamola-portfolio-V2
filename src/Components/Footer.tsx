@@ -6,11 +6,8 @@ const Footer = () => {
   const date = new Date().getFullYear()
 
   return (
-    <div className="h-fit w-full p-16 flex flex-col space-y-10 items-center bg-[#090909]">
-      {/* <h1 className=" text-3xl md:text-5xl font-reyka text-center text-[#E14842]">
-        Connect with me
-      </h1> */}
-      <img src={nameImg} alt="" />
+    <div className="h-fit w-full px-6 py-16 md:px-16 flex flex-col space-y-10 items-center bg-[#090909]">
+      <img src={nameImg} alt="adedamola" />
       <hr className="w-full border border-solid border-[#E14842]" />
       <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-40">
         <div className="flex flex-col gap-6 items-center">
@@ -52,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
       <p className="text-white text-center">
-        Designed and built with ❤️. ©Adedamola Alausa {date}
+        Designed and built by me with ❤️. ©Adedamola Alausa {date}
       </p>
     </div>
   )

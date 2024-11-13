@@ -6,7 +6,7 @@ export interface CardProps {
 
 const TestimonialCard = ({ name, position, testimony }: CardProps) => {
   return (
-    <div className="mx-6 h-96 bg-[#101010] flex flex-col justify-between w-full max-w-96 border-2 p-6 rounded-xl border-[#141414] hover:border-primary">
+    <div className="mx-6 h-96 bg-[#101010] flex flex-col justify-between w-80 max-w-96 border-2 p-6 rounded-xl border-[#141414] hover:border-[#212020]">
       <p>{testimony}</p>
       <div>
         <p>{name}</p>

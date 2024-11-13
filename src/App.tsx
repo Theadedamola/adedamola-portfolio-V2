@@ -1,10 +1,10 @@
+import { useState, useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import './index.css'
 import NavBar from './Components/NavBar'
 import Footer from './Components/Footer'
 import ScrollToTop from './Components/ScrollToTop'
 import LoadLanding from './Pages/LoadLanding'
-import { useEffect, useState } from 'react'
 import { SelectedPathProvider } from './Components/PathContext'
 import LocationListener from './Components/LocationListener'
 
@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <SelectedPathProvider>
-        <LocationListener/>
+        <LocationListener />
         <NavBar />
         <ScrollToTop />
         {showLoadLanding ? <LoadLanding /> : <Outlet />}

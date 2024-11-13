@@ -15,9 +15,9 @@ const LoadLanding = () => {
     },
   }
   return (
-    <div className="relative w-full h-screen bg-hero-bg bg-cover bg-no-repeat px-6 md:px-16 flex flex-col items-center py-[130px]">
+    <div className="relative w-full h-screen bg-hero-bg bg-cover bg-no-repeat px-6 md:px-16 flex flex-col items-center justify-center">
       <div className="z-10 absolute left-0 top-0 w-full h-screen bg-black bg-opacity-20 backdrop-blur-xl"></div>
-      <div className="z-40 mt-8 xs:mt-16 md:mt-32 lg:mt-16 flex flex-col items-center justify-center w-full">
+      <div className="z-40 flex flex-col items-center justify-center w-full">
         <div className="flex flex-col items-center justify-center space-y-4">
           <motion.h1
             ref={ref}
@@ -54,7 +54,7 @@ const LoadLanding = () => {
               },
             }}
           >
-            {'Ux Engineer'.split(' ').map((word, index) => (
+            {'Design Engineer'.split(' ').map((word, index) => (
               <motion.span key={index} variants={wordVariants}>
                 {word}{' '}
               </motion.span>
