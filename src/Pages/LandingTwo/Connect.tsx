@@ -29,8 +29,8 @@ const Connect = () => {
             bring the idea, I'll bring my wealth of experiences
           </p>
           <Link to="https://api.whatsapp.com/send/?phone=2347067276819&text&type=phone_number&app_absent=0">
-            <Button className="w-fit flex gap-2">
-              Reach out <img src={arrowRight} alt="arrow-icon" />
+            <Button className="w-fit flex gap-2 items-center">
+              Reach out <img src={arrowRight} alt="arrow-icon" className='w-5' />
             </Button>
           </Link>
         </div>

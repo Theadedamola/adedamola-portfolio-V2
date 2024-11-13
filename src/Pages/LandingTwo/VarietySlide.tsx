@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import ExperienceCard from './components/ExperienceCard'
 import { ExperienceData } from './components/ExperienceData'
+import Button from '@/Components/Button'
+import { Link } from 'react-router-dom'
 
 const VarietySlide = () => {
   return (
@@ -27,6 +29,11 @@ const VarietySlide = () => {
             skill={experience.skill}
           />
         ))}
+        <Link to="https://drive.google.com/file/d/1gqwFZ-FraNyjBhJ9F2pn_Ggus07WQWZ-/view?usp=sharing">
+          <Button variant="secondary" className="w-fit">
+            Download Resumé
+          </Button>
+        </Link>
       </div>
     </motion.div>
   )

@@ -23,7 +23,7 @@ export const ExperienceData: ExperienceTypes[] = [
     position: 'Product Designer at Freelance',
     duration: '2020-July 2024',
     summary:
-      'Worked on various projects, including designing and building the company`s website',
+      'Worked on various projects, including designing a voting web app, church management platform, sales management mobile app and many more',
     skill: ['Interaction design', 'UI/UX Design', 'User Research'],
   },
 ]

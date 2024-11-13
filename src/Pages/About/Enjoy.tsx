@@ -2,6 +2,7 @@ import { useState } from 'react'
 import AudioPlayer from './components/AudioPlayer'
 import { shirtData } from './components/shirtData'
 import Marquee from 'react-fast-marquee'
+import { Link } from 'react-router-dom'
 
 const Enjoy = () => {
   const [showTranscript, setShowTranscript] = useState(false)
@@ -66,12 +67,18 @@ const Enjoy = () => {
           <div className="flex flex-col gap-4 mt-6 p-6 bg-[#101010] bg-opacity-50 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
             <p>Check out my my page</p>
             <div className="flex gap-4">
-              <div className="p-2 w-fit text-sm text-[#8a8a8a] bg-[#1e1e1e] border-[0.5px] border-[#2b2b2b] rounded-full cursor-pointer hover:border-[#484848] hover:text-gray-200">
+              <Link
+                to="https://www.tiktok.com/@adedamolaj?_t=8rMSpZhuc9X&_r=1"
+                className="p-2 w-fit text-sm text-[#8a8a8a] bg-[#1e1e1e] border-[0.5px] border-[#2b2b2b] rounded-full cursor-pointer hover:border-[#484848] hover:text-gray-200"
+              >
                 <p>TikTok</p>
-              </div>
-              <div className="p-2 w-fit text-sm text-[#8a8a8a] bg-[#1e1e1e] border-[0.5px] border-[#2b2b2b] rounded-full cursor-pointer hover:border-[#484848] hover:text-gray-200">
+              </Link>
+              <Link
+                to="https://www.instagram.com/theferanbrand?igsh=MWViYjE5NTRvb3JhdQ%3D%3D&utm_source=qr"
+                className="p-2 w-fit text-sm text-[#8a8a8a] bg-[#1e1e1e] border-[0.5px] border-[#2b2b2b] rounded-full cursor-pointer hover:border-[#484848] hover:text-gray-200"
+              >
                 <p>Instagram</p>
-              </div>
+              </Link>
             </div>
             <Marquee gradient={false} pauseOnHover speed={50} className="h-60">
               {shirtData.map((shirt) => (
