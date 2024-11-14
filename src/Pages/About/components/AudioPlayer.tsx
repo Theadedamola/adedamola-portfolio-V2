@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import WaveAnimation from './WaveAnimation';
-import audio from '@/assets/477590__skibkamusic__skibka-voyage-3a-loop.wav'
+import audio from '@/assets/spanish introduction.mp3'
 
 const AudioPlayer = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);

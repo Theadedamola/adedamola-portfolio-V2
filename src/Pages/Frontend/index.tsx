@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { frontendData } from '@/assets/frontendData'
 import FrontendCard from './FrontendCard'
+import { useSwipeable } from 'react-swipeable'
 
 const FrontendList = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -13,8 +14,15 @@ const FrontendList = () => {
       (prevIndex) => (prevIndex - 1 + frontendData.length) % frontendData.length
     )
   }
+
+  const handlers = useSwipeable({
+    onSwipedLeft: handleNext,
+    onSwipedRight: handlePrevious,
+    trackMouse: true,
+  })
+
   return (
-    <div>
+    <div {...handlers}>
       <FrontendCard
         {...frontendData[currentIndex]}
         onNextProject={handleNext}

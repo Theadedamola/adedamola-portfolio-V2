@@ -35,20 +35,25 @@ const Enjoy = () => {
             {showTranscript && (
               <div className="flex flex-col gap-4">
                 <p>
-                  I'm a football fanatic and I live and breathe the game. I
-                  create engaging football content on TikTok and I'm also a
-                  fashion designer specializing in football jerseys. My ultimate
-                  goal is to make a significant impact in the world of sports
-                  fashion and the game at large. I'm confident that with my
-                  passion and dedication, I'll achieve this goal soon.
+                  Hello, my friends, welcome to my portfolio, this is me
+                  introducing myself, my name is Adedamola, a design engineer, I
+                  am from Nigeria, learning Spanish because I like the culture,
+                  the language, and I want to learn new things, I'm still a
+                  beginner and hoping to get better. I have three years of
+                  experience in design, I love designing and building things,
+                  I also love sports especially football. I'm ready to work and
+                  looking forward to hearing from you. Thank you for listening. Goodbye
                 </p>
                 <p className="text-[#8a8a8a]">
-                  I'm a football fanatic and I live and breathe the game. I
-                  create engaging football content on TikTok and I'm also a
-                  fashion designer specializing in football jerseys. My ultimate
-                  goal is to make a significant impact in the world of sports
-                  fashion and the game at large. I'm confident that with my
-                  passion and dedication, I'll achieve this goal soon.
+                  Hola, mis amigos, bienvenidos a mi portafolio, este es me
+                  presentando, me llamo Adedamola, un ingeniero de diseño, soy
+                  de Nigeria, aprendiendo de español porque me gusta la cultura,
+                  la lengua y quiero aprender nuevas cosas, todavía estoy un
+                  principiante y esperando ser mejor. Yo tengo tres años de
+                  experiencia en diseño, me encanta diseñar y construir cosas,
+                  también me encanta los deportes especialmente fútbol. Estoy
+                  listo para trabajar y esperando saber para ti. Gracias por
+                  escuchar. Adiós
                 </p>
               </div>
             )}

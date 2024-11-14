@@ -15,8 +15,8 @@ const LoadLanding = () => {
     },
   }
   return (
-    <div className="relative w-full h-screen bg-hero-bg bg-cover bg-no-repeat px-6 md:px-16 flex flex-col items-center justify-center">
-      <div className="z-10 absolute left-0 top-0 w-full h-screen bg-black bg-opacity-20 backdrop-blur-xl"></div>
+    <div className="relative w-full h-screen min-h-[844px] bg-hero-bg bg-cover bg-no-repeat px-6 md:px-16 flex flex-col items-center justify-center">
+      <div className="z-10 absolute left-0 top-0 w-full h-screen min-h-[844px] bg-black bg-opacity-20 backdrop-blur-xl"></div>
       <div className="z-40 flex flex-col items-center justify-center w-full">
         <div className="flex flex-col items-center justify-center space-y-4">
           <motion.h1

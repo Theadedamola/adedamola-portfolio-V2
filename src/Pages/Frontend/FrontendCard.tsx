@@ -10,11 +10,11 @@ const FrontendCard = ({
   onPreviousProject,
 }: CardTypes) => {
   return (
-    <div className="relative w-full h-screen px-6 md:px-16 flex flex-col items-center pt-[160px]">
-      <div className="z-10 absolute left-0 top-0 w-full h-screen bg-black bg-opacity-20 backdrop-blur-xl"></div>
+    <div className="relative w-full h-screen min-h-[844px] px-6 md:px-16 flex flex-col items-center pt-[160px]">
+      <div className="z-10 absolute left-0 top-0 w-full h-screen min-h-[844px] bg-black bg-opacity-20 backdrop-blur-xl"></div>
       <div className="">
         <img
-          className="z-11 absolute left-0 top-0 w-full h-screen"
+          className="z-11 absolute left-0 top-0 w-full h-screen min-h-[844px]"
           src={thumbnail}
           alt="project-thumbnail"
         />
@@ -41,10 +41,10 @@ const FrontendCard = ({
           duration: 0.5,
           ease: 'easeInOut',
         }}
-        className="z-40 relative mt-6 px-7 py-2 md:px-10 md:py-6 flex flex-col items-center space-y-6 bg-black bg-opacity-25 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
+        className="z-40 relative mt-6 px-7 py-4 md:px-10 md:py-6 flex flex-col items-center space-y-6 bg-black bg-opacity-25 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
         <Link to={`/work/frontend/${name}`}>
           <h1
-            className={`text-white text-xl md:text-2xl w-[300px] md:w-[400px] h-[50px] text-center delay-300 `}
+            className={`text-white text-xl md:text-2xl w-[300px] md:w-[400px] h-[40px] text-center delay-300 `}
           >
             {name}
           </h1>
