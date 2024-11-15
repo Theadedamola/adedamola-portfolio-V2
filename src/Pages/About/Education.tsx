@@ -16,7 +16,7 @@ const Education = () => {
         <div className="flex flex-col gap-4 p-6 w-fit text-sm text-[#8a8a8a] bg-[#101010] border-[0.5px] border-[#2b2b2b] rounded-2xl">
           <p>Download my resumé here</p>
           <img src={docImg} alt="" className="w-40" />
-          <Link to="https://drive.google.com/file/d/1gqwFZ-FraNyjBhJ9F2pn_Ggus07WQWZ-/view?usp=sharing">
+          <Link to="https://drive.google.com/file/d/1Fg20XKv6_n8dLE99HLVMx5Uk7X6uRzjd/view?usp=sharing">
             <Button variant="secondary" className="w-fit">
               Download Resumé
             </Button>

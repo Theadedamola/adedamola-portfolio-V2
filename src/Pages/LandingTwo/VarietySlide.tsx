@@ -29,7 +29,7 @@ const VarietySlide = () => {
             skill={experience.skill}
           />
         ))}
-        <Link to="https://drive.google.com/file/d/1gqwFZ-FraNyjBhJ9F2pn_Ggus07WQWZ-/view?usp=sharing">
+        <Link to="https://drive.google.com/file/d/1Fg20XKv6_n8dLE99HLVMx5Uk7X6uRzjd/view?usp=sharing">
           <Button variant="secondary" className="w-fit">
             Download Resumé
           </Button>

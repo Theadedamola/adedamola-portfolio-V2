@@ -6,9 +6,9 @@ const LoadingCounter = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCount((prev) => (prev < 100 ? prev + 1 : prev));
-    }, 50); // 5000ms / 100 counts = 50ms per count
+    }, 40); // 5000ms / 100 counts = 50ms per count
 
-    const timer = setTimeout(() => clearInterval(interval), 6000); // Stop after 5 seconds
+    const timer = setTimeout(() => clearInterval(interval), 4000); // Stop after 3 seconds
 
     return () => {
       clearInterval(interval);
