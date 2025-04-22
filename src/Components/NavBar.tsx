@@ -21,7 +21,7 @@ const NavBar = () => {
         <Link to="/">
           <div className="flex items-center space-x-4 p-4 bg-black bg-opacity-40 backdrop-blur-xl rounded-3xl">
             <img
-              className="w-8 sm:w-10"
+              className="w-6"
               src={adedamolaslogo}
               alt="adedamola's logo"
             />

@@ -1,8 +1,8 @@
 import Button from '@/Components/Button'
 import { motion } from 'framer-motion'
-import me from '@/assets/me.png'
-import me1 from '@/assets/me1.jpg'
+import profileMe from '@/assets/profile-me.png'
 import { Link } from 'react-router-dom'
+import gridLayers from '@/assets/Grid-layers.svg'
 
 const ProfileCard = () => {
   return (
@@ -16,41 +16,48 @@ const ProfileCard = () => {
         visible: { opacity: 1, scale: 1 },
       }}
     >
-      <div className="flex flex-col gap-2">
-        <div className="relative flex gap-2">
-          <img
-            src={me}
-            alt="adedamola's portrait"
-            className="w-10 h-10 rounded-lg"
-          />
-          <img
-            src={me1}
-            alt="adedamola's portrait"
-            className="w-10 h-10 rounded-lg"
-          />
+      <img
+        src={gridLayers}
+        className="absolute inset-0 w-full h-screen object-contain"
+        alt="grid background"
+      />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
+        <div className="flex flex-col gap-6">
+          <h1 className="text-4xl md:text-5xl text-[#E94E35] font-reyka font-bold leading-tight">
+            Building Products for the future
+          </h1>
+          <p className="text-[#8a8a8a] text-lg">
+            With experience in UI/UX design and frontend engineering, I am
+            driven to create innovative, user-focused digital experiences. This
+            extensive skill set makes me a significant asset to any team or
+            company.
+          </p>
+          <Link to="/about">
+            <Button variant="secondary" className="w-fit mt-4 text-[#c7c7c7]">
+              About me.
+            </Button>
+          </Link>
         </div>
-        <h1 className="text-sm text-[#8a8a8a]">First of all</h1>
-        <h1 className="text-4xl text-white font-reyka font-bold">
-          Introduction
-        </h1>
-        <p className="text-[#8a8a8a]">
-          As a seasoned UI/UX designer and a dedicated frontend engineer, I am
-          passionate about shaping innovative and user-centric digital
-          experiences. Over the course of three years, I have cultivated my
-          expertise in product design and invested significant time mastering
-          industry-standard frontend languages, including HTML, CSS, and
-          JavaScript, along with proficiency in the React framework. This
-          comprehensive skill set positions me as a valuable asset to any team
-          or company. I excel in collaborative environments, working seamlessly
-          with developers, designers, product managers, and stakeholders to
-          ensure the successful and timely delivery of projects within budget
-          constraints.
-        </p>
-        <Link to="/about">
-          <Button variant="secondary" className="w-fit mt-4 text-[#c7c7c7]">
-            About me.
-          </Button>
-        </Link>
+
+        <div className="relative flex flex-col items-center justify-center">
+          <div className="w-fit h-[340px] relative">
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-20 rounded-[40px]"></div>
+            <img
+              src={profileMe}
+              alt="adedamola's portrait"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div className="mt-8 bg-black bg-opacity-40 backdrop-blur-sm p-6 rounded-2xl max-w-md">
+            <p className="text-[#c7c7c7] italic mb-4">
+              "I've had the pleasure of working with Adedamola on various
+              occasions, and I must say, he is very dedicated to delivering good
+              quality work."
+            </p>
+            <p className="text-[#8a8a8a]">-Adedotun (Business owner)</p>
+          </div>
+        </div>
       </div>
     </motion.div>
   )
