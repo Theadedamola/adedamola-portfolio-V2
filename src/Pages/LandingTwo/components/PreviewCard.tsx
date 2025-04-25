@@ -15,7 +15,7 @@ const PreviewCard = ({ image, projectName }: Props) => {
         hidden: { opacity: 0, scale: 0.8 },
         visible: { opacity: 1, scale: 1 },
       }}
-      className="relative w-full h-fit overflow-hidden rounded-2xl group"
+      className="relative w-full h-fit overflow-hidden rounded-2xl group border-8 border-gray-100/5 backdrop-blur-xl "
     >
       <img
         src={image}

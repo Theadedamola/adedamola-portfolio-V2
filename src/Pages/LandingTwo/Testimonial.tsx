@@ -15,13 +15,13 @@ const Testimonial = () => {
         visible: { opacity: 1, scale: 1 },
       }}
     >
+      <div className='pb-8'>
+        <h1 className="text-4xl font-reyka">Testimonials</h1>
+        <p className="text-[#8a8a8a]">
+          Words from amazing people I've been privileged to work with
+        </p>
+      </div>
       <div className="w-full flex flex-col gap-8">
-        <div>
-          <h1 className="text-2xl">Testimonials</h1>
-          <p className="text-[#8a8a8a]">
-            Words from amazing people I've been privileged to work with
-          </p>
-        </div>
         <Marquee gradient={false} pauseOnHover speed={50} className="">
           {testimonialData.map((testimonial) => (
             <TestimonialCard key={testimonial.name} {...testimonial} />

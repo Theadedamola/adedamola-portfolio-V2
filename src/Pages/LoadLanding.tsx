@@ -44,16 +44,16 @@ const LoadLanding = () => {
     <div className="relative w-full h-screen min-h-[844px] bg-[#101010] px-6 md:px-16 flex flex-col items-center justify-center overflow-hidden">
       <img
         src={gridLayers}
-        className="absolute inset-0 w-full h-screen object-contain"
+        className="absolute inset-0 w-full h-screen object-cover"
         alt="grid background"
       />
       <div className="z-40 flex flex-col items-center justify-center w-full max-w-6xl mx-auto gap-16">
         <div className="flex flex-col items-center justify-center space-y-8">
-          <div className="w-fit h-[280px] overflow-hidden ">
+          <div className="overflow-hidden ">
             <img
               src={profileMe}
               alt="profile"
-              className="w-full h-full object-cover"
+              className="w-full h-[280px] object-cover"
             />
           </div>
           <motion.h1

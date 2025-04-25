@@ -8,7 +8,7 @@ const WorkSlide = () => {
     <div>
       <div className="w-full py-4">
         <Link to="/work" className="flex justify-between items-center pb-4">
-          <h1 className="text-2xl">Projects</h1>
+          <h1 className="text-4xl font-reyka">Featured Projects</h1>
           <div className="bg-[#4747476e] rounded-full p-2 flex items-center cursor-pointer">
             <p>View All</p>
             <img src={arrowRight} alt="arrow" />

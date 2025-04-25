@@ -16,7 +16,7 @@ const Connect = () => {
         visible: { opacity: 1, scale: 1 },
       }}
     >
-      <div className="w-full p-10 flex flex-col items-center justify-between lg:flex-row bg-[#101010] bg-opacity-50 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
+      <div className="w-full p-10 flex flex-col items-center justify-between lg:flex-row bg-gradient-to-br from-[#101010] via-[#1a0a2e] to-[#101010] bg-opacity-50 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
         <div>
           <img src={workWithImg} alt="work with me" className="w-80" />
         </div>

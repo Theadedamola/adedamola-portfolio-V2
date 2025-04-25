@@ -16,10 +16,10 @@ const VarietySlide = () => {
         visible: { opacity: 1, scale: 1 },
       }}
     >
+      <div className="flex justify-between items-center pb-8">
+        <h1 className="text-4xl font-reyka">Experience</h1>
+      </div>
       <div className="w-full p-6 bg-[#101010] bg-opacity-50 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
-        <div className="flex justify-between items-center pb-10">
-          <h1 className="text-2xl">Experience</h1>
-        </div>
         {ExperienceData.map((experience, index) => (
           <ExperienceCard
             key={index}

@@ -7,16 +7,16 @@ const SkillSlide = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.1 }}
-      transition={{ duration: 0.5}}
+      transition={{ duration: 0.5 }}
       variants={{
         hidden: { opacity: 0, scale: 0.8 },
         visible: { opacity: 1, scale: 1 },
       }}
     >
-      <div className="w-full h-72 bg-[#101010] bg-opacity-50 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
-        <div className="flex justify-between items-center px-4 py-4 pb-16">
-          <h1 className="text-2xl">Stack</h1>
-        </div>
+      <div className="flex justify-between items-center px-4 py-4 pb-6">
+        <h1 className="text-4xl font-reyka">Stack</h1>
+      </div>
+      <div className="w-full py-16 h-fit bg-[#101010] bg-opacity-50 backdrop-blur-sm rounded-3xl border border-[#2a2a2a31]">
         <Marquee gradient={false} pauseOnHover speed={50} className="h-32">
           {skillIcon.map((skill) => (
             <img
