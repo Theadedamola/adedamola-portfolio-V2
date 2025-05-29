@@ -38,12 +38,12 @@ export const caseStudy: CaseStudyTypes[] = [
     thumbnail: vendorizeThumb,
     name: 'Vendorize: An e-commerce for vendors',
     subtext:
-      'VendorizeME is a mobile marketplace connecting event organizers with service vendors (caterers, photographers, etc.). The app streamlines vendor discovery, booking, payment, and post-event feedback—serving two distinct user types with tailored workflows.',
+      'Vendorize is a mobile marketplace connecting event organizers with service vendors (caterers, photographers, etc.). The app streamlines vendor discovery, booking, payment, and post-event feedback—serving two distinct user types with tailored workflows.',
     process: [
       {
         heading: 'The Problem',
         content:
-          'Event organizers and vendors currently face a fragmented, inefficient experience - organizers struggle to discover and book reliable vendors, while vendors waste time managing inquiries across multiple channels without a centralized system for availability and payments.',
+          'Event organizers and vendors currently face a fragmented, inefficient experience organizers struggle to discover and book reliable vendors, while vendors waste time managing inquiries across multiple channels without a centralized system for availability and payments.',
       },
       {
         heading: 'Goals',
