@@ -24,9 +24,134 @@ import bigMerchant3 from '@/assets/bigMerchant/bigMerchant-3.png'
 import bigMerchant4 from '@/assets/bigMerchant/bigMerchant-4.png'
 import bigMerchant5 from '@/assets/bigMerchant/bigMerchant-5.png'
 
+import vendorizeThumb from '@/assets/vendorize/thumbnail.png'
+import vendorize1 from '@/assets/vendorize/home.png'
+import vendorize2 from '@/assets/vendorize/bookVendor.png'
+import vendorize3 from '@/assets/vendorize/payment.png'
+import vendorize4 from '@/assets/vendorize/vendorDashboard.png'
+import vendorize5 from '@/assets/vendorize/submit-review.png'
+import vendorize6 from '@/assets/vendorize/vendorComment.png'
+
 export const caseStudy: CaseStudyTypes[] = [
   {
     id: 1,
+    thumbnail: vendorizeThumb,
+    name: 'Vendorize: An e-commerce for vendors',
+    subtext:
+      'VendorizeME is a mobile marketplace connecting event organizers with service vendors (caterers, photographers, etc.). The app streamlines vendor discovery, booking, payment, and post-event feedback—serving two distinct user types with tailored workflows.',
+    process: [
+      {
+        heading: 'The Problem',
+        content:
+          'Event organizers and vendors currently face a fragmented, inefficient experience - organizers struggle to discover and book reliable vendors, while vendors waste time managing inquiries across multiple channels without a centralized system for availability and payments.',
+      },
+      {
+        heading: 'Goals',
+        content: `Create distinct yet intuitive interfaces for both user types.
+
+Streamline vendor discovery with smart filtering.
+
+Simplify the booking and confirmation process.
+
+Enable seamless payment integration.
+
+Facilitate transparent post-event reviews.`,
+      },
+      {
+        heading: 'Role',
+        content:
+          'I was the sole designer for this project, from research to execution.',
+      },
+    ],
+    solution: [
+      {
+        heading: 'Organizer (Vendor Search)',
+        content: `
+Layout:
+Home Screen: Search bar (prominent), category chips (horizontal scroll), vendor cards (image + rating/price).
+Filters Screen: Modal overlay with collapsible sections (category, price, availability).
+Vendor Profile: Tabbed view (About/Reviews/FAQ), sticky "Book Now" CTA.
+
+Usability:
+- Prioritized discoverability with bold search and visual categories
+- Filters reduce overwhelm by letting users refine before scrolling
+- Profile tabs segment dense info (reviews vs. pricing) to avoid clutter
+
+User Flow: Home → Search → Filters → Profile → (Exit or Book)`,
+        image: vendorize1,
+      },
+      {
+        heading: 'Book Vendor',
+        content: `
+Layout:
+- Form: Minimal fields (date picker, dropdowns)
+- Summary Screen: Card-like recap with edit links next to each field
+
+Usability:
+- Editability in the summary prevents backtracking
+
+User Flow: Profile → Booking Form → Summary → Payment`,
+        image: vendorize2,
+      },
+      {
+        heading: 'Payment',
+        content: `
+Layout:
+- Payment Screen: Card form with auto-formatting (e.g., "1234 → 1234 5678")
+- Confirmation Screen: Large checkmark, receipt PDF option, "Message Vendor" CTA
+- Tracking Screen: Timeline (Pending → Confirmed) with vendor contact button
+
+Usability:
+- Default saved cards speed up repeat bookings
+- Post-payment CTAs guide next steps (Tracking or browse more)
+- Timeline reduces anxiety by visualizing next steps
+
+User Flow: Payment → Confirmation → Tracking/Home`,
+        image: vendorize3,
+      },
+      {
+        heading: 'Vendor Dashboard',
+        content: `
+Layout:
+- Calendar View: Month view with color-coded slots (green = available)
+- Date Overview: Shows booked dates and blocked dates
+- Availability Editor: Options to block single days or recurring weekly slots
+
+Usability:
+- Visual calendar mimics familiar paper planners
+- Bulk editing saves time for recurring schedules
+
+User Flow: Availability → Calendar → Edit → Save`,
+        image: vendorize4,
+      },
+      {
+        heading: 'Service Confirmation',
+        content: `
+Layout:
+- Organizer Review: Star rating + photo upload + feedback
+- Vendor Response: Public reply field beneath organizer's review
+
+Usability:
+- Photo uploads build trust through service verification
+- Two-sided review system encourages professionalism
+
+User Flow: Post-event notification → Review → (Vendor reply)`,
+        image: vendorize5,
+      },
+      {
+        heading: '',
+        content: ``,
+        image: vendorize6,
+      },
+      {
+        heading: 'Conclusion',
+        content:
+          'The Vendorize project successfully transformed a fragmented event planning process into a streamlined, user-centric marketplace. By addressing core pain points through tailored interfaces for organizers and vendors, the design delivers: Efficiency through smart search filters and booking automation, Trust via transparent reviews and secure payments, Control with real-time availability management. This solution demonstrates how thoughtful UX/UI design can create value for both sides of a marketplace—proving that complex, multi-user platforms can remain intuitive and actionable. The project highlights the importance of balancing distinct user needs while maintaining system-wide cohesion—a principle applicable to any service-driven product.',
+      },
+    ],
+  },
+  {
+    id: 2,
     thumbnail: walletwiseThumbnail,
     name: 'Walletwise: Fintech App',
     subtext:
@@ -94,7 +219,7 @@ Versatile and Accessible Options: Include support for diverse payment methods an
     ],
   },
   {
-    id: 2,
+    id: 3,
     thumbnail: referaproThumbnail,
     name: 'ReferAPro',
     subtext:
@@ -180,7 +305,7 @@ Network Growth and Collaboration: Provide professionals with tools to connect wi
     ],
   },
   {
-    id: 3,
+    id: 4,
     thumbnail: bigMerchantThumb,
     name: 'BigMerchant: Sales App',
     subtext:
